@@ -1,0 +1,1 @@
+ printf("\n sum of fibo series is %d",sum);

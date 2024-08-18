@@ -1,22 +1,22 @@
 #include<stdio.h>
+
 int swap(int *a,int *b){
     int temp = *a;
     *a = *b;
     *b = temp;
 }
-void ssort(int arr[],int n){
-    
-    for(int i = 0;i<n-1;i++){
-         int min_idx = i;
-    for(int j = i+1;j<n;j++){
-        if(arr[j]<arr[min_idx]){
-             min_idx = j;
+
+void isort(int arr[],int n){
+    for(int i = 1;i<n;i++){
+        int key ;
+        key = arr[i];
+        int j = i-1;
+        while(j>=0 && arr[j]>key){
+            swap(&arr[j],&arr[j+1]);
+            j--;
         }
     }
-    swap(&arr[i],&arr[min_idx]);
-  }
 }
-
 
 int main(){
     int n;
@@ -27,7 +27,7 @@ int main(){
     for(int i = 0;i<n;i++){
         scanf("%d",&arr[i]);
     }
-    ssort(arr,n);
+    isort(arr,n);
     printf("the sorted array is : ");
     for(int i = 0;i<n;i++){
         printf("%d ",arr[i]);
@@ -35,5 +35,6 @@ int main(){
     return 0;
 }
 
-// worst best avg tc- O(n*n)
-// space complexity- O(1)
+//tc for worst and avg = O(n*n)
+//best case tc = O(n)
+// sc = O(1) 

@@ -12,11 +12,11 @@ int main(){
      int n;
      printf("enter the value of n : ");
      scanf("%d",&n);
-    //  int sum = 0;
+     int sum = 0;
      for(int i = 1;i<=n;i++){
-        // sum += fibo(i);
+        sum += fibo(i);
         printf("%d ",fibo(i));
      }
-    //  printf("\n sum of fibo series is %d",sum);
+     printf(" sum of fibo series is %d",sum);
     return 0;
 }
