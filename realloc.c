@@ -28,14 +28,27 @@ int main(){
         printf("ERROR ! memeory not allocated !!!!!!!11");
         exit(0);
     }
+    printf("enter the array elements : ");
     for(i = 0;i<n;i++){
         scanf("%d",p+i);
         sum += *(p+i);
     }
     printf("sum is : %d\n",sum);
-    isort(p,n);
+   int m;
+    printf("ufffff we need some extra space please enter new space :  ");
+    sum = 0;
+    scanf("%d",&m);
+    p = (int*)realloc(p,m);
+      printf("enter the array elements  again : ");
+    for(i = 0;i<m;i++){
+        scanf("%d",p+i);
+        sum += *(p+i);
+    }
+    printf("sum is : %d\n",sum);
+    
+    isort(p,m);
      printf("sorted array is : ");
-    for(int i = 0;i<n;i++){
+    for(int i = 0;i<m;i++){
         printf("%d ",*(p+i));
     }
     free(p);
