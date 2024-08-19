@@ -12,13 +12,17 @@ void isort(int arr[],int n){
         key = arr[i];
         int j = i-1;
         while(j>=0 && arr[j]>key){
-            arr[j+1] = arr[j];
+            // arr[j+1] = arr[j];
+            swap(&arr[j+1],&arr[j]);
             j--;
         }
-        arr[j+1]= key;
+        // arr[j+1]= key;
     }
 }
 
+
+//isort mei hum array pratiyek element uthyayege one by one or usko uski 
+//right position par place krenge 
 int main(){
     int n;
     printf("enter the size of array : ");

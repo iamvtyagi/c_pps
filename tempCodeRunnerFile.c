@@ -1,1 +1,1 @@
- printf("%d\n",p);
+int n  = strlen(name);

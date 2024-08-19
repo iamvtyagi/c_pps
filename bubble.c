@@ -19,8 +19,7 @@ void bsort(int arr[],int n){
     }
   }
 }
-
-
+// hame sabse bade element ko array ke last mei phuchana hai 
 int main(){
     int n;
     printf("enter the size of array : ");

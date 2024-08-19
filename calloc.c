@@ -28,6 +28,7 @@ int main(){
         printf("ERROR ! memeory not allocated !!!!!!!11");
         exit(0);
     }
+    printf("enter the array element : ");
     for(i = 0;i<n;i++){
         scanf("%d",p+i);
         sum += *(p+i);
