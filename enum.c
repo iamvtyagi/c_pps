@@ -4,7 +4,6 @@
 
       enum week{sun,mon,tue,wed,thu,fri,sat};
       enum week{sun=2,mon,tue,wed,thu,fri,sat};
-                      //3
 int main(){
 
      enum week day= wed ;

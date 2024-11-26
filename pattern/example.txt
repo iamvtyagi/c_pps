@@ -1,0 +1,2 @@
+Hello, this is a sample text written to the file.
+Let's read this text from the file and display it.
