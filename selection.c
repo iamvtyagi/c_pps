@@ -15,6 +15,8 @@ void ssort(int arr[],int n){
     }
     swap(&arr[i],&arr[min_idx]);
   }
+
+
 }
 // jo hamara sabse chhota element hai usko sabse left mei puchaa dunga
 

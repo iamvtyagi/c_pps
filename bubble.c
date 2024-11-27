@@ -18,7 +18,10 @@ void bsort(int arr[],int n){
         break;
     }
   }
+
 }
+
+
 // hame sabse bade element ko array ke last mei phuchana hai 
 int main(){
     int n;
