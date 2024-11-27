@@ -55,6 +55,9 @@ void deleteD(struct DNode** head, int data) {
         return;
     }
 
+    // This loop traverses the doubly linked list until it finds the node with the specified data or reaches the end of the list.
+    // The loop condition checks if the current node (temp) is not NULL and its data is not equal to the data we're searching for.
+    // If the condition is true, it moves to the next node in the list.
     while (temp && temp->data != data) {
         temp = temp->next;
     }
