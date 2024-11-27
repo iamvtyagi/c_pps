@@ -6,8 +6,8 @@ int main(){
 
        int a = 34;
        int *p = &a;
-    //    printf("%u\n",*p);
-    //    printf("%d\n",p);
+       printf("%u\n",*p);
+       printf("%d\n",p);
        p++;     //p = p+1(size of int)
       // //  *p = *p + 3;
       // printf("%u\n",*p);

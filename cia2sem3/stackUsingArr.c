@@ -68,7 +68,8 @@ void freeStack(Stack *stack) {
 
 int main() {
     Stack stack;
-    int initialCapacity = 2; // Initial capacity of the stack
+    int initialCapacity = 2
+    ; // Initial capacity of the stack
     initStack(&stack, initialCapacity);
 
     int n, value;
