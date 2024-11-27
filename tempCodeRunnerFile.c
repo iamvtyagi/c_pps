@@ -1,1 +1,2 @@
-int n  = strlen(name);
+
+    printf("sum is : %d\n",sum);

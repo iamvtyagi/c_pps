@@ -10,18 +10,17 @@ int main(){
         if(ch == EOF){    // EOF = end of file
             break;
         }
-       if(ch == ' '){ 
+        noc++;
+        if(ch == ' '){ 
             nos++;
         }
-       if(ch == '\n'){ 
+      if(ch == '\n'){ 
             nol++;
         }
-       if(ch == '\t'){ 
+      if(ch == '\t'){ 
             not++;
         } 
-        else{
-             noc++;
-        }               
+         
      }
      fclose(fp);
      printf("nos %d\n",nos);

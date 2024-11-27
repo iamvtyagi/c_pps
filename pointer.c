@@ -4,21 +4,21 @@ int main(){
 
           // simple pointer 
 
-      //  int a = 34;
-      //  int *p = &a;
-      // //  printf("%u\n",*p);
-      //  printf("%d\n",p);
-      //  p++;
+       int a = 34;
+       int *p = &a;
+    //    printf("%u\n",*p);
+    //    printf("%d\n",p);
+       p++;     //p = p+1(size of int)
       // //  *p = *p + 3;
       // printf("%u\n",*p);
-      //  printf("%d\n",p);
+    //    printf("%d\n",p);
 
       //void pointer
 
-      // int c = 5;
-      // void *v = &c;
-      // printf("%u\n",*(int*)v);
-      // printf("%d\n",v);
+      int c = 5;
+      void *v = &c;
+      printf("%u\n",*(int*)v);
+      printf("%d\n",v);
       // printf("%d\n",(int*)v);        //both are same
 
       // int *t = (int*)v;
@@ -28,10 +28,10 @@ int main(){
       // printf("%d\n",t);
 
 
-      int *n;
-      int r = 5;
-      n = &r;
-      printf("%u",*n);
+    //   int *n;
+    //   int r = 5;
+    //   n = &r;
+    //   printf("%u",*n);
 
       return 0;
 }
