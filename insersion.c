@@ -7,18 +7,19 @@ void swap(int *a,int *b){
 }
 
 void isort(int arr[],int n){
-    for(int i = 1;i<n;i++){
-        int key ;
-        key = arr[i];
-        int j = i-1;
-        while(j>=0 && arr[j]>key){
-            // arr[j+1] = arr[j];
-            swap(&arr[j+1],&arr[j]);
-            j--;
-        }
-        // arr[j+1]= key;
-    }
-}
+    // for(int i = 1;i<n;i++){
+    //     int key ;
+    //     key = arr[i];
+    //     int j = i-1;
+    //     while(j>=0 && arr[j]>key){
+    //         // arr[j+1] = arr[j];
+    //         swap(&arr[j+1],&arr[j]);
+    //         j--;
+    //     }
+    //     // arr[j+1]= key;
+    // }
+
+
 
 
 //isort mei hum array pratiyek element uthyayege one by one or usko uski 
