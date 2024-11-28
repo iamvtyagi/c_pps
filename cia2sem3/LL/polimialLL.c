@@ -20,23 +20,31 @@ struct Node* createNode(int coeff, int exp) {
 
 // Function to insert a term in descending order of exponent
 void insertTerm(struct Node** poly, int coeff, int exp) {
+    // Create a new node with the given coefficient and exponent
     struct Node* newNode = createNode(coeff, exp);
 
+    // Check if the polynomial is empty or if the exponent of the new node is greater than the exponent of the first node
+    // If true, insert the new node at the beginning of the polynomial
     if (*poly == NULL || (*poly)->exp < exp) {
-        newNode->next = *poly;
-        *poly = newNode;
-        return;
+        newNode->next = *poly; // Set the next pointer of the new node to the current first node
+        *poly = newNode; // Update the polynomial to start with the new node
+        return; // Exit the function after inserting the node
     }
 
-    
+    // Initialize a pointer to traverse the polynomial
     struct Node* current = *poly;
+    // Traverse the polynomial to find the correct position for the new node
+    // The loop continues until it finds a node with an exponent less than or equal to the new node's exponent
     while (current->next != NULL && current->next->exp > exp) {
-        current = current->next;
+        current = current->next; // Move to the next node
     }
 
-    newNode->next = current->next;
-    current->next = newNode;
+    // Insert the new node after the current node
+    newNode->next = current->next; // Set the next pointer of the new node to the next node of the current node
+    current->next = newNode; // Set the next pointer of the current node to the new node
 }
+
+
 
 // Function to display a polynomial
 void displayPolynomial(struct Node* poly) {

@@ -49,7 +49,7 @@ void dequeue(CircularQueue *queue) {
     if (queue->front == queue->rear) {
         queue->front = queue->rear = -1; // Queue becomes empty
     } else {
-        queue->front = (queue->front + 1) % SIZE;
+        queue->front = (queue->front + 1) % SIZE; 
     }
     printf("%d dequeued from the queue.\n", removedValue);
 }
